@@ -13,7 +13,6 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import NavLink from "./nav-link";
 import Footer from "./footer";
 import WalletData from "./wallet-data";
-
 const Links = [
   {
     name: "Home",
@@ -54,7 +53,7 @@ const MainLayout = ({ children }) => {
           />
           <HStack spacing={8} alignItems={"center"}>
             <Flex alignItems="center">
-              <Image src="./images/platzi.svg" width="80px" />
+              <Image src={process.env.PUBLIC_URL + '/images/logo.png'} width="80px" />
               <Heading size="md" color="purple" mt={0.2} ml={1}>
                 Raffle Creator
               </Heading>
